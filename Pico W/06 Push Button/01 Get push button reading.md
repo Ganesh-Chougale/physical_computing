@@ -10,8 +10,6 @@ while True:
     buttonState = myButton.value()
     print(buttonState)
     sleep(0.1)
-
-
 ```  
 ![](../0_images/001/13.jpg)  
 ![](../0_images/001/14.jpg)  
