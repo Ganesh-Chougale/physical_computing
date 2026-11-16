@@ -27,8 +27,8 @@ UPDserver.bind((serverIpAddress, serverListenerPort))
 print('UDP Server Up & waiting....')
 
 while True:
-    message,address = UPDserver.recvfrom(bufferSize)
-    messageDecoded = message.decode('utf-8')
+    cmdInput,address = UPDserver.recvfrom(bufferSize)
+    messageDecoded = cmdInput.decode('utf-8')
     print(messageDecoded)
 ```  
 run this programm & grab that Ip address, we need it to assign in next file.  

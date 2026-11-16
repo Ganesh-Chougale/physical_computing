@@ -9,6 +9,6 @@ bufferSize = 1024
 UDPclient = localSocket.socket(localSocket.AF_INET, localSocket.SOCK_DGRAM)
 
 while True:
-    userInput = input('What is your command?: ')
+    userInput = input('What is your color?: ')
     cmdEncoded = userInput.encode('utf-8')
     UDPclient.sendto(cmdEncoded, serverConfig)
